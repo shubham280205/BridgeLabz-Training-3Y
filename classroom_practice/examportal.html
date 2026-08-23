@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Examination Portal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #eeeeee;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* Main container */
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            background-color: #f5c8a3;
+            border: 8px solid #f5c8a3;
+        }
+
+        /* Header */
+        header {
+            background-color: #168bb8;
+            text-align: center;
+            padding: 35px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+            font-size: 42px;
+            text-shadow: 2px 2px 2px #555;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #dcebd5;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #168bb8;
+        }
+
+        /* Blue information bar */
+        .blue-bar {
+            height: 45px;
+            background-color: #4e7c91;
+            color: white;
+            text-align: right;
+            padding: 13px 25px;
+            font-size: 14px;
+        }
+
+        /* Main content */
+        .content {
+            display: flex;
+            min-height: 390px;
+        }
+
+        /* Welcome section */
+        .welcome {
+            width: 70%;
+            padding: 35px 25px;
+            border-right: 1px solid #777;
+        }
+
+        .welcome h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 28px;
+        }
+
+        .welcome hr {
+            border: none;
+            border-top: 2px solid #777;
+            margin-bottom: 20px;
+        }
+
+        .welcome p {
+            color: #444;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* Login button */
+        .login-button {
+            display: inline-block;
+            padding: 8px 25px;
+            border: 2px solid #555;
+            color: #333;
+            text-decoration: none;
+            background-color: #f5c8a3;
+        }
+
+        .login-button:hover {
+            background-color: #168bb8;
+            color: white;
+        }
+
+        /* Team section */
+        .team {
+            width: 30%;
+            padding: 30px 15px;
+            overflow: hidden;
+        }
+
+        .team h2 {
+            margin: 0;
+            text-align: center;
+            color: #333;
+            font-size: 25px;
+        }
+
+        .team hr {
+            border: none;
+            border-top: 2px solid #777;
+        }
+
+        /* Team scrolling area */
+        .team-box {
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Team names */
+        .team-names {
+            text-align: center;
+            animation: moveUp 10s linear infinite;
+        }
+
+        .team-names p {
+            margin: 25px 0;
+            font-size: 19px;
+            color: #333;
+        }
+
+        /* Move names upward */
+        @keyframes moveUp {
+
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+
+        }
+
+        /* Footer */
+        footer {
+            background-color: #168bb8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 15px;
+        }
+
+        /* Mobile view */
+        @media (max-width: 700px) {
+
+            .content {
+                flex-direction: column;
+            }
+
+            .welcome {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #777;
+            }
+
+            .team {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Website Header -->
+        <header>
+            <h1>Smart Examination Portal</h1>
+        </header>
+
+
+        <!-- Navigation -->
+        <nav>
+
+            <a href="#">Home</a>
+            |
+            <a href="#">About</a>
+            |
+            <a href="#">Courses</a>
+            |
+            <a href="#">Exam Schedule</a>
+            |
+            <a href="#">Results</a>
+            |
+            <a href="#">Contact</a>
+
+        </nav>
+
+
+        <!-- Blue Bar -->
+        <div class="blue-bar">
+            Student Examination Portal
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="content">
+
+
+            <!-- Left Side -->
+            <div class="welcome">
+
+                <h2>
+                    Welcome to Smart Examination Portal
+                </h2>
+
+                <hr>
+
+                <a href="#" class="login-button">
+                    Student Login
+                </a>
+
+                <p>
+                    The Smart Examination Portal offers a modern
+                    and efficient way to conduct online examinations.
+                    Our platform provides an easy-to-use interface
+                    for students, teachers and administrators.
+                </p>
+
+                <p>
+                    Whether you are preparing for academic exams
+                    or professional certifications, our system
+                    helps you practice and perform efficiently.
+                </p>
+
+            </div>
+
+
+            <!-- Right Side - Our Team -->
+            <div class="team">
+
+                <h2>
+                    Our Team
+                </h2>
+
+                <hr>
+
+
+                <!-- Moving Names Box -->
+                <div class="team-box">
+
+                    <div class="team-names">
+
+                        <p>Shubham</p>
+
+                        <p>Rahul</p>
+
+                        <p>Priya</p>
+
+                        <p>Ananya</p>
+
+                        <p>Aditya</p>
+
+                        <p>Rohit</p>
+
+                        <p>Neha</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+
+            © 2025 Smart Examination Portal |
+            All Rights Reserved
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
